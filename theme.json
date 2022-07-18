@@ -1,7 +1,7 @@
 {
     "id": "nodebb-theme-mobvoi",
-    "name": "Persona",
-    "description": "The default theme for NodeBB. Uses a standard approach to forum design.",
+    "name": "mobvoi",
+    "description": "Mobvoi development theme",
     "url": "https://github.com/Posion-J/nodebb-theme-mobvoi.git",
     "screenshot": "screenshot.png"
 }
