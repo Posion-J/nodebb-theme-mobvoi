@@ -1,36 +1,23 @@
-<div component="categories/category" data-cid="{../cid}" data-numRecentReplies="{../numRecentReplies}" class="col-md-3 kralahmet">
-  <div class="kralahmet-container">
-    <meta itemprop="name" content="{../name}">
-    <div class="kralahmet-bg" style="{function.generateCategoryBackground}"></div>
-    <div class="content sicakhavalar">
-<a class="div-href" href="{config.relative_path}/category/{../slug}" itemprop="url">
-<h2 class="title">
-<!-- IMPORT partials/categories/link.tpl --><br/>
-<!-- IF ../descriptionParsed -->
-<div class="description">
-{../descriptionParsed}
-</div>
-<!-- ENDIF ../descriptionParsed -->
-
-</h2>
-
-
-<div class="fixed-stats">
-<!-- IF !../link -->
-<div class="stats pull-left" style="color: #fff; font-size: 14px; margin-right: 15px;">
-<small style="color: #fff;"><i class="fa fa-rocket"></i></small>
-<span class="{../unread-class} evetya human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span>
-
-</div>
-<div class="stats pull-left" style="color: #fff; font-size: 14px;">
-<small style="color: #fff;"><i class="fa fa-bolt"></i></small>
-<span class="{../unread-class} evetya human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span>
-</div>
-</a>
-</div>
-
-</div>
-<!-- ENDIF !../link -->
-
-</div>
-</div>
+<li component="categories/category" data-cid="{../cid}" data-numRecentReplies="1" class="row clearfix category-{../cid}">
+	<meta itemprop="name" content="{../name}">
+	<h2 class="title">
+		<!-- IMPORT partials/categories/link.tpl -->
+	</h2>
+	<!-- IF !config.hideCategoryLastPost -->
+	<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+		<!-- IMPORT partials/categories/lastpost.tpl -->
+	</div>
+	<!-- IF !../link -->
+	<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="{../unread-class} human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span><br />
+		<small>[[global:topics]]</small>
+		<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
+		
+	</div>
+	<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="{../unread-class} human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span><br />
+		<small>[[global:posts]]</small>
+	</div>
+	<!-- ENDIF !config.hideCategoryLastPost -->
+	<!-- ENDIF !../link -->
+</li>

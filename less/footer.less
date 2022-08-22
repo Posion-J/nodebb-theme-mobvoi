@@ -1,0 +1,94 @@
+.footer {
+	text-align: center;
+	-webkit-transition: opacity 200ms linear;
+	-moz-transition: opacity 200ms linear;
+	-ms-transition: opacity 200ms linear;
+	-o-transition: opacity 200ms linear;
+	transition: opacity 200ms linear;
+
+	.copyright {
+		padding-bottom: 10px;
+	}
+
+	&.ajaxifying {
+		-moz-opacity: 0.00;
+		opacity: 0.00;
+		-ms-filter:~"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	}
+}
+// 底部
+.footer{
+	width: 100%;
+	background-color: #282A2C;
+	margin: 0;
+	.footer-url{
+		max-width: 1180px;
+		margin: 0 auto;
+		padding: 50px 10px 26px;
+		display: flex;
+		dl{
+			font-size: 12px;
+			text-align: left;
+			margin-right: 90px;
+		}
+		dt {
+			margin: 0 10px 20px 0;
+			font-size: 12px;
+			width: auto;
+			color: #fff;
+			text-transform: uppercase;
+			font-family: 'plutoSansMedium', Roboto, sans-serif;
+		}
+		dd {
+			margin: 0 0 10px;
+			text-transform: uppercase;
+			a {
+				color: #fff;
+				position: relative;
+			}
+			a:hover{
+				opacity: 0.8;
+				border-bottom: 1px solid #838383;
+			}
+			.country-search {
+				width: 200px;
+				height: 35px;
+				position: relative;
+			}
+			.country-search-input {
+				width: 100%;
+				height: 100%;
+				line-height: 40px;
+				border: 1px solid #fff;
+				border-radius: 0;
+				text-indent: 10px;
+				font-size: 12px;
+				color: #fff;
+				padding: 0;
+				background: transparent;
+				margin-right: 0;
+				outline: none;
+			}
+		}
+		.share-buttons-item:before {
+			content: "";
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+			background-image: url("https://d1yt8qkhp8oydd.cloudfront.net/ticbuy/img/footer-icons.8.png?ff3043ba5a35568e89077feef9d3d9ab");
+			background-size: 150px;
+		}
+		.share-twitter:before {
+			background-position: -30px 0;
+		}
+		.share-instagram:before {
+			background-position: -60px 0;
+		}
+		.share-youtube:before {
+			background-position: -90px 0;
+		}
+		.share-pinterest:before {
+			background-position: -120px 0;
+		}
+	}
+}
