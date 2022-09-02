@@ -1,7 +1,11 @@
-Timuu theme for NodeBB
+Persona theme for NodeBB
 ====================
 
+Persona is the new default theme for NodeBB as of v0.7.1
 
-## Install 
+## Addons
 
-`npm install nodebb-theme-mobvoi`
+[Recent Cards](https://github.com/Posion-J/nodebb-theme-mobvoi.git)
+
+## Screenshots
+

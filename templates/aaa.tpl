@@ -1,3 +1,0 @@
-<div>
-    aadasasasa
-</div>

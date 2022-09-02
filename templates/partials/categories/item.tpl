@@ -5,18 +5,23 @@
 	</h2>
 	<!-- IF !config.hideCategoryLastPost -->
 	<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+		<div class="screen">
+			<a href="javascript:void(0)">Most liked</a>
+			<div class="line"></div>
+			<a href="javascript:void(0)" class="latest">Latest</a>
+		</div>
 		<!-- IMPORT partials/categories/lastpost.tpl -->
-	</div>
-	<!-- IF !../link -->
-	<div class="col-md-1 hidden-sm hidden-xs stats">
-		<span class="{../unread-class} human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span><br />
-		<small>[[global:topics]]</small>
-		<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
-		
-	</div>
-	<div class="col-md-1 hidden-sm hidden-xs stats">
-		<span class="{../unread-class} human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span><br />
-		<small>[[global:posts]]</small>
+		<!-- IMPORT partials/categories/lastpost.tpl -->
+		<!-- IF !../link -->
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="{../unread-class} human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span><br />
+			<small>[[global:topics]]</small>
+			<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
+		</div>
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="{../unread-class} human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span><br />
+			<small>[[global:posts]]</small>
+		</div>
 	</div>
 	<!-- ENDIF !config.hideCategoryLastPost -->
 	<!-- ENDIF !../link -->

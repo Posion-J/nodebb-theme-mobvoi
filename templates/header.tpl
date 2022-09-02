@@ -32,16 +32,10 @@
 
 	<main id="panel" class="slideout-panel">
 		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
-			<div class="container-box">
-				<div class="container">
-					<!-- IMPORT partials/menu_title.tpl -->
-				</div>
-			</div>
-			<div class="container" style="height: 54px;">
+			<div class="container">
 				<!-- IMPORT partials/menu.tpl -->
 			</div>
 		</nav>
-
 		<div class="container" id="content">
 		<!-- IMPORT partials/noscript/warning.tpl -->
 		<!-- IMPORT partials/noscript/message.tpl -->

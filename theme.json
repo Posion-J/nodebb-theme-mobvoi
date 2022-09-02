@@ -1,7 +1,7 @@
 {
     "id": "nodebb-theme-mobvoi",
-    "name": "Mobvoi",
-    "description": "Timuu's NodeBB Mobvoi.",
-    "url": "https://github.com/Posion-J/nodebb-theme-mobvoi",
+    "name": "mobvoi",
+    "description": "mobvoi",
+    "url": "https://github.com/Posion-J/nodebb-theme-mobvoi.git",
     "screenshot": "screenshot.png"
 }

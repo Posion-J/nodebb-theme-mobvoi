@@ -1,4 +1,4 @@
-		</div><!-- /.container#content -->
+	</div><!-- /.container#content -->
 	</main>
 	<!-- IMPORT partials/menu_footer.tpl -->
 	<!-- IF !isSpider -->

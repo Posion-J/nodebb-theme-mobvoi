@@ -66,7 +66,6 @@
 			var index = 0; //标记当前展示图片的索引
 			var dingshiqi; //定义定时器
 			chongqi(); //调用重启定时器
-            console.log(imgs,9999)
 
 			//绑定定时器自动切换事件
 			function chongqi() {
