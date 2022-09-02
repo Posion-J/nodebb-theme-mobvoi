@@ -4,11 +4,11 @@
   "nbbpm": {
     "compatibility": "^2.0.0"
   },
-  "description": "mobvoi-two theme for NodeBB",
+  "description": "mobvoi theme for NodeBB",
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NodeBB/nodebb-theme-persona"
+    "url": "https://github.com/Posion-J/nodebb-theme-mobvoi.git"
   },
   "scripts": {
     "lint": "eslint ."
